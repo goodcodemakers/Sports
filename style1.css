@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.gnb {
+  position: fixed;
+  font-size: 32px;
+
+  z-index: 50;
+  top: 50px;
+  left: 50px;
+  color: #fff;
+}
+.gnb a {
+  text-decoration: none;
+  color: #fff;
+}
+.imgbox {
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+.imgbox img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.textbox {
+  width: 150px;
+  height: 350px;
+  position: absolute;
+  top: calc(50% - 175px);
+  left: calc(50% - 75px);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+}
+.textbox p:first-child {
+  font: 36px sans-serif;
+}
+.textbox p:nth-child(2) {
+  font: 36px sans-serif;
+  margin: 20px 0;
+}
+.textbox:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: 1s;
+}
+.textbox:not(:hover) {
+  transition: 1s;
+}
+.imgbox img {
+  filter: grayscale(80%);
+}
+.textbox p:nth-child(2) {
+  font-size: 48px;
+}
+.imgbox img:hover {
+  filter: grayscale(0%);
+  transition: 1s;
+}
+.imgbox img:not(:hover) {
+  transition: 1s;
+}
+.imgbox:hover {
+  width: 30%;
+  transition: 1s;
+}
+.imgbox:not(:hover) {
+  transition: 1s;
+}
